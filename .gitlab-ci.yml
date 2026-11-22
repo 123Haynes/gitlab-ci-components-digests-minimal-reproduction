@@ -10,7 +10,7 @@ include:
     file: "/templates/sast.yml"
 
   # CI/CD component syntax - unpinned tag (should be pinned to commit SHA + comment)
-  - component: gitlab.com/components/opentofu/full-pipeline@5.0.0
+  - component: gitlab.com/components/opentofu/full-pipeline@2a8baf619fd3ab8787556dfd61b6dff6df800c82 # 5.1.0
 
   # CI/CD component syntax - pinned to older commit SHA with tag comment (should update SHA + comment)
   - component: gitlab.com/components/sast/sast@7669fa23fcd85253e25ef6f2fb1e012a11999ac2 # 2.0.0
