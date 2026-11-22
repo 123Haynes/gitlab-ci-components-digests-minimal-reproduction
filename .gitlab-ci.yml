@@ -1,0 +1,16 @@
+include:
+  # Legacy include:project syntax - unpinned tag (should be pinned to commit SHA + comment)
+  - project: "components/sast"
+    ref: "2.0.0"
+    file: "/templates/sast.yml"
+
+  # Legacy include:project syntax - pinned to older commit SHA on branch `main` (should update SHA)
+  - project: "components/sast"
+    ref: "7669fa23fcd85253e25ef6f2fb1e012a11999ac2" # main
+    file: "/templates/sast.yml"
+
+  # CI/CD component syntax - unpinned tag (should be pinned to commit SHA + comment)
+  - component: gitlab.com/components/opentofu/full-pipeline@5.0.0
+
+  # CI/CD component syntax - pinned to older commit SHA with tag comment (should update SHA + comment)
+  - component: gitlab.com/components/sast/sast@7669fa23fcd85253e25ef6f2fb1e012a11999ac2 # 2.0.0
