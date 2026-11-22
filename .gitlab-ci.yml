@@ -6,7 +6,7 @@ include:
 
   # Legacy include:project syntax - pinned to older commit SHA on branch `main` (should update SHA)
   - project: "components/sast"
-    ref: "7669fa23fcd85253e25ef6f2fb1e012a11999ac2" # main
+    ref: "732d5e0a4861257ff3dafa4106affb0cbeda6a4f" # main
     file: "/templates/sast.yml"
 
   # CI/CD component syntax - unpinned tag (should be pinned to commit SHA + comment)
